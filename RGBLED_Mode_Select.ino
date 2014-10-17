@@ -34,8 +34,6 @@ void setup() {
   pinMode(SELECT_BUTTON, INPUT);
   pinMode(reduceButton, INPUT);
   pinMode(increaseButton, INPUT);
-  
-  Serial.begin(115200);
 }
 
 void loop() {
@@ -51,13 +49,6 @@ void loop() {
   
   setColorIntensity(modeSelect);
   setColor(modeSelect);
-  
-  Serial.print("Mode: ");  
-  Serial.print(modeSelect);
-  Serial.print(" ");
-  Serial.print(greenVal);
-  Serial.print(" ");
-  Serial.println(blueVal);
 }
 
 /**
